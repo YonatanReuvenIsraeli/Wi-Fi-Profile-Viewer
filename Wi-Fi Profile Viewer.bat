@@ -10,7 +10,7 @@ goto Profile
 :Profile
 echo.
 set Profile=
-set /p Profile="Which Wi=Fi profile do you want to view? "
+set /p Profile="Which Wi-Fi profile do you want to view? "
 netsh wlan show profile name="%Profile%" key=clear
 if errorlevel 1 goto Profile
 goto Another
