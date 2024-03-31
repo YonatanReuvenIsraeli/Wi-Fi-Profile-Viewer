@@ -1,6 +1,8 @@
 @echo off
 setlocal
 title Wi-Fi Profile Viewer
+echo Wi-Fi Profile Viewer v1.0
+echo.
 goto Start
 
 :Start
