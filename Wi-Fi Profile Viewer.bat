@@ -1,7 +1,7 @@
 @echo off
 setlocal
 title Wi-Fi Profile Viewer
-echo Wi-Fi Profile Viewer v1.0.1
+echo Wi-Fi Profile Viewer v1.0.2
 echo.
 goto Start
 
@@ -14,7 +14,7 @@ echo.
 set Profile=
 set /p Profile="Which Wi-Fi profile do you want to view? "
 netsh wlan show profile name="%Profile%" key=clear
-if not errorlevel 0 goto Profile
+if not "%errorlevel%"=="0" goto Profile
 goto Another
 
 :Another
