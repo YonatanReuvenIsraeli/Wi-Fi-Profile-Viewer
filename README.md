@@ -1,2 +1,2 @@
 # Wi-Fi-Profile-Viewer
-View Windwos Wi-Fi profiles.
+View Windows Wi-Fi profiles.
