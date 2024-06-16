@@ -2,7 +2,7 @@
 setlocal
 title Wi-Fi Profile Viewer
 echo Program Name: Wi-Fi Profile Viewer
-echo Version: 1.1.1
+echo Version: 1.1.2
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -27,7 +27,7 @@ set Another=
 set /p Another="Do you want to view another Wi-Fi profile? (Yes/No) "
 if /i "%Another%"=="Yes" goto Profile
 if /i "%Another%"=="No" goto Done
-echo Invalid Syntax!
+echo Invalid syntax!
 goto Another
 
 :Done
