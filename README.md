@@ -1,2 +1,2 @@
-# Wi-Fi Profile Viewer v1.1.5
+# Wi-Fi Profile Viewer v1.1.6
 View Windows Wi-Fi profiles.
