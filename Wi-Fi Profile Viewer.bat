@@ -2,7 +2,7 @@
 setlocal
 title Wi-Fi Profile Viewer
 echo Program Name: Wi-Fi Profile Viewer
-echo Version: 1.1.8
+echo Version: 1.1.9
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
@@ -12,10 +12,11 @@ if not "%errorlevel%"=="0" goto "InWindowsPreinstallationEnvironmentWindowsRecov
 goto "Start"
 
 :"InWindowsPreinstallationEnvironmentWindowsRecoveryEnvironment"
+endlocal
 echo.
 echo You are in Windows Preinstallation Environment or Windows Recovery Environment! You must run this batch file in Windows. Press any key to close this batch file.
 pause > nul 2>&1
-goto "Close"
+exit
 
 :"Start"
 "%windir%\System32\netsh.exe" wlan show profile
