@@ -2,15 +2,15 @@
 setlocal
 title Wi-Fi Profile Viewer
 echo Program Name: Wi-Fi Profile Viewer
-echo Version: 1.1.6
+echo Version: 1.1.7
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
-echo Sponsor: https://github.com/sponsors/YonatanReuvenIsraeli 
+echo Sponsor: https://github.com/sponsors/YonatanReuvenIsraeli
 goto "Start"
 
 :"Start"
-netsh wlan show profile
+"%windir%\System32\netsh.exe" wlan show profile
 if not "%errorlevel%"=="0" goto "Error1"
 goto "Profile"
 
@@ -23,7 +23,7 @@ goto "Start"
 echo.
 set Profile=
 set /p Profile="Which Wi-Fi profile do you want to view? "
-netsh wlan show profile name="%Profile%" key=clear
+"%windir%\System32\netsh.exe" wlan show profile name="%Profile%" key=clear
 if not "%errorlevel%"=="0" goto "Error2"
 goto "Another"
 
