@@ -2,7 +2,7 @@
 setlocal
 title Wi-Fi Profile Viewer
 echo Program Name: Wi-Fi Profile Viewer
-echo Version: 1.1.9
+echo Version: 1.1.10
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
@@ -37,7 +37,7 @@ if not "%errorlevel%"=="0" goto "Error2"
 goto "Another"
 
 :"Error2"
-echo Profile %Profile% does not exist! Pleas try again.
+echo Profile %Profile% does not exist! Please try again.
 goto "Profile"
 
 :"Another"
