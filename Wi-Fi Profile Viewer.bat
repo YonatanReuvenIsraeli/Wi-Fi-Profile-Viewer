@@ -1,8 +1,8 @@
 @echo off
-setlocal
 title Wi-Fi Profile Viewer
+setlocal
 echo Program Name: Wi-Fi Profile Viewer
-echo Version: 1.1.10
+echo Version: 1.1.11
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
